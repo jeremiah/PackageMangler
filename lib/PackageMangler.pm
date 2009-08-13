@@ -36,6 +36,13 @@ use Moose;
 has 'name' => (isa => 'Str', is => 'rw');
 has 'destination' => (isa => 'Str', is => 'rw');
 
+=item copy_file
+
+Copy a file. Pass this a file name and a destination. Returns
+0 on success, error messages otherwise.
+
+=cut
+
 sub copy_file {
   use File::Copy;
   my ($self, $file, $to_dir) = @_;
@@ -59,6 +66,17 @@ sub copy_file {
     or warn "Cannot move file " . $self->name . " to " . $self->destination .": $!\n";
   return $self->destination;
 }
+
+
+=item read_Packages
+
+Reads a Packages file which is passed as an argument. Returns a refernce to
+its contents.
+
+=cut
+
+has 'packages' => (isa => 'Str', is => 'rw', required => 1);
+
 
 no Moose;
 
