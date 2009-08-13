@@ -1,0 +1,12 @@
+libpackagemangler-perl (0.02-1) unstable; urgency=low
+
+  * No release
+  * Updated package incorporating upstream bug fix.
+
+ -- Jeremiah C. Foster <jeremiah@jeremiahfoster.com>  Tue, 04 Aug 2009 16:58:04 +0000
+
+libpackagemangler-perl (0.01-1) unstable; urgency=low
+
+  * Initial Packaging. No release.
+
+ -- Jeremiah C. Foster <jeremiah@jeremiahfoster.com>  Mon, 27 Jul 2009 21:54:26 +0000

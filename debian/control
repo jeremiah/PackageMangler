@@ -1,0 +1,14 @@
+Source: libpackagemangler-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7), libmodule-build-perl
+Build-Depends-Indep: perl (>= 5.6.0-12), perl-modules
+Maintainer: Jeremiah C. Foster <jeremiah@jeremiahfoster.com>
+Standards-Version: 3.8.2
+
+Package: libpackagemangler-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}
+Description: A library for moving binary debian packages 
+ A library for moving binary debian packages
+ .

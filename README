@@ -1,0 +1,26 @@
+PackageMangler
+
+A library for moving debian packages around a file system and repository.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc PackageMangler
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2009 Jeremiah C. Foster
+
+This program is released under the following license: GPL
+

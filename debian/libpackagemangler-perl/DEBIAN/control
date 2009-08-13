@@ -1,0 +1,11 @@
+Package: libpackagemangler-perl
+Version: 0.02-1
+Architecture: all
+Maintainer: Jeremiah C. Foster <jeremiah@jeremiahfoster.com>
+Installed-Size: 64
+Depends: perl (>= 5.6.0-16)
+Section: perl
+Priority: optional
+Description: A library for moving binary debian packages
+ A library for moving binary debian packages
+ .
