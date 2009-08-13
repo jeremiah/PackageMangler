@@ -36,13 +36,6 @@ use Moose;
 has 'name' => (isa => 'Str', is => 'rw');
 has 'destination' => (isa => 'Str', is => 'rw');
 
-=item copy_file
-
-Copy a file. Pass this a file name and a destination. Returns
-0 on success, error messages otherwise.
-
-=cut
-
 sub copy_file {
   use File::Copy;
   my ($self, $file, $to_dir) = @_;
@@ -71,6 +64,8 @@ sub copy_file {
 no Moose;
 
 __PACKAGE__->meta->make_immutable;
+
+
 
 =head1 AUTHOR
 
