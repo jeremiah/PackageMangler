@@ -1,14 +1,12 @@
 #!/usr/bin/perl
 
-use strict;
 use warnings;
-use Test::More tests => 2;
-use Cwd;
-use PackageMangler::File;
+use strict;
+use PackageMangler::Pkgs;
+use Test::More tests => 1;
 
 BEGIN {
-  use_ok('PackageMangler');
+  use_ok('PackageMangler::Pkgs');
 }
 
-my $repo = PackageMangler->new();
-isa_ok($repo, "PackageMangler");
+my $packs = Pkgs->new();

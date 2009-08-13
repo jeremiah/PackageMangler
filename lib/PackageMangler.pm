@@ -11,7 +11,7 @@ Version 0.02
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.2.1';
 
 =head1 SYNOPSIS
 
@@ -66,16 +66,6 @@ sub copy_file {
     or warn "Cannot move file " . $self->name . " to " . $self->destination .": $!\n";
   return $self->destination;
 }
-
-
-=item read_Packages
-
-Reads a Packages file which is passed as an argument. Returns a refernce to
-its contents.
-
-=cut
-
-has 'packages' => (isa => 'Str', is => 'rw', required => 1);
 
 
 no Moose;
