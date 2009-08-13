@@ -11,7 +11,7 @@ Version 0.02
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.2.1';
 
 =head1 SYNOPSIS
 
@@ -60,9 +60,12 @@ sub copy_file {
   return $self->destination;
 }
 
+
 no Moose;
 
 __PACKAGE__->meta->make_immutable;
+
+
 
 =head1 AUTHOR
 
