@@ -1,8 +1,5 @@
 package PackageMangler;
 
-use warnings;
-use strict;
-
 =head1 NAME
 
 PackageMangler - A library for moving binary debian packages 
@@ -62,8 +59,6 @@ sub copy_file {
     or warn "Cannot move file " . $self->name . " to " . $self->destination .": $!\n";
   return $self->destination;
 }
-
-
 
 no Moose;
 
